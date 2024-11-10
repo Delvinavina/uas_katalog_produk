@@ -1,4 +1,4 @@
-import 'package:ecommer_apps/domain/entity/product.dart';
+import 'package:uas_katalog_produk/domain/entity/product.dart';
 import 'package:equatable/equatable.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 
