@@ -1,11 +1,11 @@
-import 'package:uas_katalog_produk/presentation/pages/cart_page.dart';
-import 'package:uas_katalog_produk/presentation/pages/detail_page.dart';
-import 'package:uas_katalog_produk/presentation/pages/login.dart';
-import 'package:uas_katalog_produk/presentation/provider/cart/bloc/cart_bloc.dart';
-import 'package:uas_katalog_produk/presentation/provider/login/bloc/login_bloc.dart';
-import 'package:uas_katalog_produk/presentation/provider/product/bloc/product_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:uas_katalog_produk/pages/cart_page.dart';
+import 'package:uas_katalog_produk/pages/detail_page.dart';
+import 'package:uas_katalog_produk/pages/login.dart';
+import 'package:uas_katalog_produk/provider/cart/bloc/cart_bloc.dart';
+import 'package:uas_katalog_produk/provider/login/bloc/login_bloc.dart';
+import 'package:uas_katalog_produk/provider/product/bloc/product_bloc.dart';
 
 class ProductsPage extends StatelessWidget {
   const ProductsPage({super.key});

@@ -1,8 +1,7 @@
 import 'package:uas_katalog_produk/domain/entity/product.dart';
 import 'package:flutter/material.dart';
-import 'package:uas_katalog_produk/presentation/provider/cart/bloc/cart_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
+import 'package:uas_katalog_produk/provider/cart/bloc/cart_bloc.dart';
 
 class ProductDetailPage extends StatefulWidget {
   final Product product;
