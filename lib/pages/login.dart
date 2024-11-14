@@ -46,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
                   const Icon(Icons.image, size: 100, color: Colors.grey),
                   const SizedBox(height: 24),
                   const Text(
-                    'Welcome to KatalogProduk',
+                    'Welcome to Katalog Produk',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 24),
@@ -54,7 +54,7 @@ class _LoginPageState extends State<LoginPage> {
                   TextFormField(
                     controller: _emailController,
                     decoration: InputDecoration(
-                      hintText: 'katalog@nkatalog.com',
+                      hintText: 'katalog@katalog.com',
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),
                       ),
