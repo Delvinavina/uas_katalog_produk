@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  firebase_core: ^latest_version
   injectable: ^2.4.0
   get_it: ^7.6.7
   bloc: ^8.1.4
