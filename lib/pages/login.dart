@@ -43,10 +43,13 @@ class _LoginPageState extends State<LoginPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Icon(Icons.image, size: 100, color: Colors.grey),
-                  const SizedBox(height: 24),
+                  Image(
+                  width: double.infinity,
+                  height: 200,
+                  image: AssetImage('assets/banner.jpg'),
+                ),
                   const Text(
-                    'Welcome to Katalog Produk',
+                    'Aplikasi Katalog Produk',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 24),
