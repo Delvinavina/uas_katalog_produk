@@ -17,7 +17,7 @@ class ProductBloc extends HydratedBloc<ProductEvent, ProductState> {
         id: 1,
         name: 'Kemeja Polos',
         price: 99000.0,
-        imageAsset: '1.jpg',
+        imageAsset: '2.jpg',
         sizes: ['S', 'M', 'L', 'XL'],
       ),
       const Product(
@@ -38,21 +38,21 @@ class ProductBloc extends HydratedBloc<ProductEvent, ProductState> {
         id: 4,
         name: 'Kemeja Flannel',
         price: 189000.0,
-        imageAsset: '4.jpg',
+        imageAsset: '3.jpg',
         sizes: ['S', 'M', 'L', 'XL'],
       ),
       const Product(
         id: 5,
         name: 'Kaos Berkerah',
         price: 229000.0,
-        imageAsset: '5.jpg',
+        imageAsset: '2.jpg',
         sizes: ['S', 'M', 'L', 'XL'],
       ),
       const Product(
         id: 6,
         name: 'Kaos Cotton',
         price: 249000.0,
-        imageAsset: '6.jpg',
+        imageAsset: '2.jpg',
         sizes: ['S', 'M', 'L', 'XL'],
       ),
     ];

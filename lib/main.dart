@@ -1,18 +1,16 @@
 import 'dart:io';
 
+import 'package:uas_katalog_produk/presentation/pages/login.dart';
+import 'package:uas_katalog_produk/presentation/pages/products.dart';
+import 'package:uas_katalog_produk/presentation/provider/cart/bloc/cart_bloc.dart';
+import 'package:uas_katalog_produk/presentation/provider/login/bloc/login_bloc.dart';
+import 'package:uas_katalog_produk/presentation/provider/product/bloc/product_bloc.dart';
+import 'package:uas_katalog_produk/theme.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:uas_katalog_produk/pages/login.dart';
-import 'package:uas_katalog_produk/pages/products.dart';
-import 'package:uas_katalog_produk/provider/cart/bloc/cart_bloc.dart';
-import 'package:uas_katalog_produk/provider/login/bloc/login_bloc.dart';
-import 'package:uas_katalog_produk/provider/product/bloc/product_bloc.dart';
-import 'package:uas_katalog_produk/theme.dart';
-//import 'package:firebase_core/firebase_core.dart';
-//import 'firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

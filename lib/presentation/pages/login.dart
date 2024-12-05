@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:uas_katalog_produk/pages/products.dart';
-import 'package:uas_katalog_produk/pages/register.dart';
-import 'package:uas_katalog_produk/provider/login/bloc/login_bloc.dart';
+import 'package:uas_katalog_produk/presentation/pages/products.dart';
+import 'package:uas_katalog_produk/presentation/pages/register.dart';
+import 'package:uas_katalog_produk/presentation/provider/login/bloc/login_bloc.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
