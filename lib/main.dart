@@ -17,9 +17,9 @@ import 'package:path_provider/path_provider.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Inisialisasi Firebase
+ 
   await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,  // Pastikan opsi ini sesuai dengan platform
+    options: DefaultFirebaseOptions.currentPlatform,  
   );
 
   HydratedBloc.storage = await HydratedStorage.build(
