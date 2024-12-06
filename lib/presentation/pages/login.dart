@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:uas_katalog_produk/presentation/pages/products.dart';
 import 'package:uas_katalog_produk/presentation/pages/register.dart';
 import 'package:uas_katalog_produk/presentation/provider/login/bloc/login_bloc.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -43,17 +43,17 @@ class _LoginPageState extends State<LoginPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image(
-                  width: double.infinity,
-                  height: 200,
-                  image: AssetImage('assets/banner.jpg'),
-                ),
+                  const Icon(
+                    Icons.checkroom,  // Ikon pakaian
+                    size: 100,
+                    color: Colors.grey,
+                  ),
                   const Text(
-                    'Product Collection',
+                    'Prodak Produk',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 24),
-                 
+                  // Email TextFormField with validation
                   TextFormField(
                     controller: _emailController,
                     decoration: InputDecoration(
@@ -74,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
                     },
                   ),
                   const SizedBox(height: 16),
-                  
+                  // Password TextFormField with validation
                   TextFormField(
                     controller: _passwordController,
                     obscureText: true,
@@ -95,11 +95,11 @@ class _LoginPageState extends State<LoginPage> {
                     },
                   ),
                   const SizedBox(height: 24),
-                  
+                  // Login Button
                   ElevatedButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
-                        
+                        // Trigger Bloc Event for Login
                         context.read<LoginBloc>().add(
                               LoginSubmitted(
                                 email: _emailController.text,
@@ -121,7 +121,7 @@ class _LoginPageState extends State<LoginPage> {
                         context,
                         MaterialPageRoute(
                           builder: (context) =>
-                              const RegisterPage(),
+                              const RegisterPage(), // You'll need to create this page
                         ),
                       );
                     },

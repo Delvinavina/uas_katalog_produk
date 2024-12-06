@@ -4,22 +4,29 @@ import 'package:uas_katalog_produk/presentation/pages/products.dart';
 import 'package:uas_katalog_produk/presentation/provider/cart/bloc/cart_bloc.dart';
 import 'package:uas_katalog_produk/presentation/provider/login/bloc/login_bloc.dart';
 import 'package:uas_katalog_produk/presentation/provider/product/bloc/product_bloc.dart';
-import 'package:uas_katalog_produk/presentation/provider/loading/bloc/loading_bloc.dart'; // Tambahkan import ini
-import 'package:uas_katalog_produk/presentation/pages/loading_page.dart'; // Tambahkan import ini
+import 'package:uas_katalog_produk/presentation/provider/loading/bloc/loading_bloc.dart';
+import 'package:uas_katalog_produk/presentation/pages/loading_page.dart';
 import 'package:uas_katalog_produk/theme.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:path_provider/path_provider.dart';
+// import 'package:firebase_core/firebase_core.dart';
+// import 'firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  HydratedBloc.storage = await HydratedStorage.build(
+
+   HydratedBloc.storage = await HydratedStorage.build(
     storageDirectory: kIsWeb
         ? HydratedStorage.webStorageDirectory
         : await getTemporaryDirectory(),
   );
+
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // );
   runApp(const MainApp());
 }
 
@@ -40,7 +47,8 @@ class MainApp extends StatelessWidget {
           create: (context) => CartBloc(),
         ),
         BlocProvider(
-          create: (context) => LoadingBloc()..add(StartLoading()), // Tambahkan LoadingBloc provider
+          create: (context) => LoadingBloc()
+            ..add(StartLoading()), // Tambahkan LoadingBloc provider
         )
       ],
       child: MaterialApp(

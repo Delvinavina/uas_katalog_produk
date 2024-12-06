@@ -11,7 +11,7 @@ class ProductBloc extends HydratedBloc<ProductEvent, ProductState> {
   }
 
   void _onLoadProducts(LoadProducts event, Emitter<ProductState> emit) {
-
+    // In a real app, you'd fetch this from an API or database
     final products = [
       const Product(
         id: 1,
@@ -55,18 +55,32 @@ class ProductBloc extends HydratedBloc<ProductEvent, ProductState> {
         imageAsset: '2.jpg',
         sizes: ['S', 'M', 'L', 'XL'],
       ),
-       const Product(
-        id: 7,
-        name: 'Kaos ',
-        price: 239000.0,
+      const Product(
+        id: 6,
+        name: 'Kaos Kaos',
+        price: 249000.0,
+        imageAsset: '3.jpg',
+        sizes: ['S', 'M', 'L', 'XL'],
+      ),
+      const Product(
+        id: 6,
+        name: 'Kaos Semi',
+        price: 249000.0,
         imageAsset: '3.jpg',
         sizes: ['S', 'M', 'L', 'XL'],
       ),
        const Product(
-        id: 8,
-        name: 'Kaos - kaos ',
+        id: 6,
+        name: 'Kaos Loreng',
         price: 249000.0,
-        imageAsset: '3.jpg',
+        imageAsset: '2.jpg',
+        sizes: ['S', 'M', 'L', 'XL'],
+      ),
+       const Product(
+        id: 6,
+        name: 'Kaos Santai',
+        price: 249000.0,
+        imageAsset: '2.jpg',
         sizes: ['S', 'M', 'L', 'XL'],
       ),
     ];

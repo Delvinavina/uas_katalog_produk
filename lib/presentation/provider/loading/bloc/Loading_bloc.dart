@@ -48,7 +48,7 @@ class LoadingBloc extends Bloc<LoadingEvent, LoadingState> {
       
       try {
         // Simulasi loading data
-        await Future.delayed(const Duration(seconds: 2));
+        await Future.delayed(const Duration(seconds: 10));
         final data = await fetchData();
         emit(LoadingSuccess(data));
       } catch (e) {

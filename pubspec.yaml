@@ -19,7 +19,8 @@ dependencies:
   equatable: ^2.0.5
   path_provider: ^2.1.4
   firebase_core: ^3.8.1  # Pastikan versi sesuai dengan yang Anda gunakan
-  firebase_auth: ^5.3.4  # Jika menggunakan autentikasi Firebase
+  firebase_auth: ^5.3.4 
+  flutter_image_slideshow: ^0.1.6 # Jika menggunakan autentikasi Firebase
   # dependensi lainnya
 
 dev_dependencies:

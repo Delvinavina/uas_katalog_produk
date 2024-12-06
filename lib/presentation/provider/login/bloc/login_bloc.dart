@@ -15,10 +15,10 @@ class LoginBloc extends HydratedBloc<LoginEvent, LoginState> {
   void _onLoginSubmitted(LoginSubmitted event, Emitter<LoginState> emit) async {
     emit(state.copyWith(status: LoginStatus.loading));
 
-    
+    // Simulating API call
     await Future.delayed(const Duration(seconds: 2));
 
-    if (event.email == 'katalog@gmail.com' && event.password == 'password123') {
+    if (event.email == 'admin@example.com' && event.password == 'password123') {
       emit(state.copyWith(
         status: LoginStatus.success,
         isLoggedIn: true,

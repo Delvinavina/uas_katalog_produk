@@ -13,7 +13,7 @@ class LoadingPage extends StatelessWidget {
         backgroundColor: Colors.purple[50], // Background warna ungu muda
         appBar: AppBar(
           title: const Text(
-            'Welcome Katalog Produk',
+            'Welcome Katalog Produk!',
             style: TextStyle(color: Colors.white),
           ),
           backgroundColor: Colors.purple[200], // AppBar warna ungu muda
