@@ -49,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
                   image: AssetImage('assets/banner.jpg'),
                 ),
                   const Text(
-                    'Aplikasi Katalog Produk',
+                    'Product Collection',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 24),
@@ -57,7 +57,7 @@ class _LoginPageState extends State<LoginPage> {
                   TextFormField(
                     controller: _emailController,
                     decoration: InputDecoration(
-                      hintText: 'katalog@katalog.com',
+                      hintText: 'katalog @katalog.com',
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),
                       ),

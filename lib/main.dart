@@ -40,7 +40,7 @@ class MainApp extends StatelessWidget {
           create: (context) => CartBloc(),
         ),
         BlocProvider(
-          create: (context) => LoadingBloc(), // Tambahkan LoadingBloc provider
+          create: (context) => LoadingBloc()..add(StartLoading()), // Tambahkan LoadingBloc provider
         )
       ],
       child: MaterialApp(
