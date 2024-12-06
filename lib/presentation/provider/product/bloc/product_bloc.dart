@@ -55,6 +55,20 @@ class ProductBloc extends HydratedBloc<ProductEvent, ProductState> {
         imageAsset: '2.jpg',
         sizes: ['S', 'M', 'L', 'XL'],
       ),
+       const Product(
+        id: 7,
+        name: 'Kaos ',
+        price: 239000.0,
+        imageAsset: '3.jpg',
+        sizes: ['S', 'M', 'L', 'XL'],
+      ),
+       const Product(
+        id: 8,
+        name: 'Kaos - kaos ',
+        price: 249000.0,
+        imageAsset: '3.jpg',
+        sizes: ['S', 'M', 'L', 'XL'],
+      ),
     ];
     emit(ProductState(products: products));
   }
